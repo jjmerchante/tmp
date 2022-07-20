@@ -1,0 +1,11 @@
+---
+title: asd
+category: added
+author: Jose Javier Merchante <jjmerchante@bitergia.com>
+issue: null
+notes: >
+    Fix multiple changelog entries added
+    
+    This commit fixes when multiple changelog entries
+    are added in the same pull request.
+
