@@ -1,0 +1,29 @@
+name: release
+
+on:
+  workflow_call:
+
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pim
+        run: echo "version=10" >> $GITHUB_OUTPUT
+      - name: get output
+        run: |
+          echo $XX
+        env:
+          XX: ${{steps.pim.outputs.version}}
+
+
+  a:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pof
+        id: pof
+        run: echo "version=11" >> $GITHUB_OUTPUT
+      - name: get output
+        run: |
+          echo $XX
+        env:
+          XX: ${{steps.pof.outputs.pof}}
