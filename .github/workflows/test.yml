@@ -26,4 +26,4 @@ jobs:
         run: |
           echo $XX
         env:
-          XX: ${{steps.pof.outputs.pof}}
+          XX: ${{steps.pof.outputs.version}}
